@@ -1,16 +1,70 @@
 {
-    "books": [
+  "agencia":[
+    {
+     "name": "Agencia",
+      "password": "agencia123",
+      "email": "agencia@gmail.com",
+      "rol": "agencia",
+      "id": "1"
+    }],
+
+  "agentes":[
       {
-        "id": 1,
-        "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
-        "book_name": "Harry Potter and the Philosopher's Stone",
-        "author": "J. K. Rowling",
-        "genre": "fiction",
-        "edition": "2021",
-        "publisher": "Bloomsbury",
-        "cost": 1299,
-        "borrowed": false
+        "name": "Rodolfo Wolff",
+        "password": "FVlbe1cASRHQz7w",
+        "email": "Elliott_Leannon31@gmail.com",
+        "rol": "agente",
+        "id_agencia":"1",
+        "id": "2"
+      },
+       {
+        "name": "Theodore Rice",
+        "password": "u8enXGIgrEIU_i1",
+        "email": "Jaunita_Champlin@gmail.com",
+        "rol": "agente",
+        "id_agencia":"1",
+        "id": "3"
       }
-    ]
-  }
-  
+      ],
+
+    "hotel":
+      [{
+        "id":"1",
+        "nombre":"hilton",
+        "estado":"habilitado",
+        "direccion":"calle 24 # 12-16",
+        "id_agencia":"1",
+        "id_agente":"2",
+        "habitaciones":[
+        {
+          "id":"1",
+          "numero" : "203",
+          "precio" : "50",
+          "impuesto":"5",
+          "direccion":"piso 5",
+          "tipo":"sencilla",
+          "estado":"habilitado"
+        }]
+      }],
+
+    "reserva":
+    [{
+        "id":"1",
+        "id_hotel":"1",
+        "id_habitacion":"1",
+        "id_agente":"1",
+            "usuario":{
+                "nombre":"andres",
+                "apellido":"gomez",
+                "fecha_nacimiento":"12/6/2000",
+                "tipo_documento":"c.c",
+                "numero_doc":"1.111.443.222",
+                "email":"gomez_122020@gmail.com",
+                "telefono":"310213254",
+                "emergencia":{
+                    "nombre":"santiago",
+                    "telefono":"3212443212"
+                }
+            }
+    }]
+}
